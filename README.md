@@ -9,3 +9,5 @@ python implementation of the xprtipbot api
 `from xrptipbotPy import xrptipbot`
 
 `x = xrptipbot(token)`
+
+`x.tip(.5, "xrptipbot://twitter/AJ58O", true)`
