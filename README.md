@@ -7,4 +7,5 @@ python implementation of the xprtipbot api
 
 # Usage:
 `from xrptipbotPy import xrptipbot`
+
 `x = xrptipbot(token)`
