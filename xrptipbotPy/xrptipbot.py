@@ -1,6 +1,6 @@
- import requests
+import requests
 
- class xrptipbot:
+class xrptipbot:
 	def __init__(self, token):
 		self.token = token
 		self.baseUrl = "https://www.xrptipbot.com/app/api"
