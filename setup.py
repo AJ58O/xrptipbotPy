@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'xrptipbotPy',      
   packages = ['xrptipbotPy'],
-  version = '0.1',   
+  version = '0.3',   
   license='MIT',     
   description = 'Python implementation of the XrpTipBot API',
   author = 'Just A Guy',                
   author_email = 'breakthroughconsultations@gmail.com',   
   url = 'https://github.com/AJ58O/xrptipbotPy',
-  download_url = 'https://github.com/AJ58O/xrptipbotPy/archive/v_01.tar.gz', 
+  download_url = 'https://github.com/AJ58O/xrptipbotPy/archive/v_03.tar.gz', 
   keywords = ['XRP', 'xrptipbot', 'cryptocurrency'],
   install_requires=[         
           'requests',
