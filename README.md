@@ -10,4 +10,4 @@ python implementation of the xprtipbot api
 
 `x = xrptipbot(token)`
 
-`x.tip(.5, "xrptipbot://twitter/AJ58O", true)`
+`x.tip(.5, "xrptipbot://twitter/AJ58O", True)`
