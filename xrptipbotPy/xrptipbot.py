@@ -14,7 +14,7 @@ class xrptipbot:
 			"model":model
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def unlink(self):
 		url = self.baseUrl + "/action:unlink/"
@@ -23,7 +23,7 @@ class xrptipbot:
 			"token":self.token
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def get_balance(self):
 		url = self.baseUrl + "/action:balance/"
@@ -32,7 +32,7 @@ class xrptipbot:
 			"token":self.token
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def tip(self, amount, to, existingDestination):
 		url = self.baseUrl + "/action:tip/"
@@ -44,7 +44,7 @@ class xrptipbot:
 			"existingDestination":existingDestination
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def get_stats(self):
 		url = self.baseUrl + "/action:userinfo/"
@@ -53,7 +53,7 @@ class xrptipbot:
 			"token":self.token
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def get_contacts(self):
 		url = self.baseUrl + "/action:contacts/"
@@ -62,7 +62,7 @@ class xrptipbot:
 			"token":self.token
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def lookup_user(self, query):
 		url = self.baseUrl + "/action:lookup/"
@@ -72,7 +72,7 @@ class xrptipbot:
 			"query":query
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def create_paper_wallet(self, note):
 		url = self.baseUrl + "/action:paper-proposal/"
@@ -82,7 +82,7 @@ class xrptipbot:
 			"note":note
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content
+		return r
 
 	def bump(self, amount, aps=None, geo=None, nfc=None):
 		url = self.baseUrl + "/action:bump/"
@@ -95,5 +95,5 @@ class xrptipbot:
 			"nfc":nfc
 		}
 		r = requests.post(url=url, json=payload, headers=headers)
-		return r.content		
+		return r		
 
